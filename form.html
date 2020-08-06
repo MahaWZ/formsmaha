@@ -1,0 +1,73 @@
+
+<!doctype html>
+<html>
+<head>
+
+<title>GYM Membership</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script type="text/javascript" src="script.js">
+</script>
+
+</head>
+
+<body>
+
+<div class="membership">
+<form action="page2.html">
+<!--- class are given to apply specific css--->
+<div class="box"><!--- box div is made to contain form elements for its css--->
+<h1> Gym Membership Form </h1>
+</div>
+<p class="top-info">Want to become a member of our Gym? Then start by filling our form to complete registration. We will contact you shortly to notify you about your membership card.</p>
+<p>Name<span class="required">*</span></p>
+<input type="text" name="name" placeholder="First" required/>
+<input type="text" name="name" placeholder="Last" required/>
+<p>DOB<span class="required">*</span></p>
+<input type="date" name="dob" required/>
+<p>Gender<span class="required">*</span></p>
+<input type="radio" value="none" name="gender" required/> <span>Male</span>
+<input type="radio" value="none" name="gender" required/> <span>Female</span>
+<p>Your current weight (lbs)<span class="required">*</span></p>
+<input type="number" name="name"/>
+<p>Height<span class="required">*</span></p>
+<input type="text" name="name" required/>
+<div class="box1">
+<p>Home Address<span class="required">*</span></p>
+<input type="text" name="name" placeholder="Street address" required/>
+<input type="text" name="name" placeholder="City" required/>
+<input type="text" name="name" placeholder="Postal / Zip code" required/>
+ <select>
+	<option value="">Country</option>
+	<option value="1">Pakistan</option>
+	<option value="2">Germany</option>
+	<option value="3">France</option>
+ 	<option value="4">Brazil</option>
+	<option value="5">USA</option>
+</select>
+</div>
+<p>Email<span class="required">*</span></p>
+<input type="text" name="name" required/>
+<p>Phone</p>
+<input name="no" id="no"  type="text" onBlur="validate()"><span id="noprompt">xxx-xxx-xxxx</span>
+<div class="question">
+<p>Do you require a personal trainer?<span class="required">*</span></p>
+<label><input type="radio" value="none" name="personal-trainer" required/> <span>Yes</span>
+<input type="radio" value="none" name="personal-trainer" required/> <span>No</span>
+<p>Have you been in a Gym before?<span class="required">*</span></p>
+<input type="radio" value="none" name="gym-before" required/> <span>Yes</span>
+<input type="radio" value="none" name="gym-before" required/> <span>No</span>
+</div>
+<p>Membership Type<span class="required">*</span></p>
+<input type="radio" value="none" name="membership" required/> <span>Regular</span>
+<input type="radio" value="none" name="membership" required/> <span>Pro</span>
+<input type="radio" value="none" name="membership" required/> <span>VIP</span>
+<div class="apply">
+<button onClick="fvalidate();" href="/">Apply</button>
+
+</div> 
+
+</form>
+</div>
+
+</body>
+</html>
